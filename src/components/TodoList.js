@@ -4,9 +4,11 @@ import { useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 import { todoListState } from '../globalState/globalState';
 import TodoItem from './TodoItem';
+import { useParams } from 'react-router-dom';
 
 export default function TodoList() {
   const [todoList, setTodoList] = useRecoilState(todoListState);
+  const { id } = useParams();
 
   useEffect(() => {
     const fetchData = async () => {

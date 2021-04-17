@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function TodoItem({ task }) {
   return (
@@ -8,7 +9,7 @@ export default function TodoItem({ task }) {
           <span>{task.name}</span>
           <button>Done</button>
           <button>Delete</button>
-          <button>Edit</button>
+          <Link to={`/${task.id}`}>Edit</Link>
         </div>
       </li>
     </>
