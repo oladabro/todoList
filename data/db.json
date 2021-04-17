@@ -1,0 +1,16 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "name": "groceries"
+    },
+    {
+      "id": 2,
+      "name": "laundry"
+    },
+    {
+      "id": 3,
+      "name": "inpost pickup packages"
+    }
+  ]
+}
