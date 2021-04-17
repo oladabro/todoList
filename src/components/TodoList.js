@@ -3,6 +3,7 @@ import axios from 'axios';
 import { useEffect } from 'react';
 import { useRecoilState } from 'recoil';
 import { todoListState } from '../globalState/globalState';
+import TodoItem from './TodoItem';
 
 export default function TodoList() {
   const [todoList, setTodoList] = useRecoilState(todoListState);
@@ -19,7 +20,7 @@ export default function TodoList() {
   return (
     <ul>
       {todoList.map((task) => {
-        return <li key={task.id}>{task.name}</li>;
+        return <TodoItem key={task.id} task={task} />;
       })}
     </ul>
   );
