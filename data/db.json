@@ -1,16 +1,24 @@
 {
   "tasks": [
     {
-      "id": 1,
-      "name": "groceries"
+      "name": "zakupy",
+      "isDone": false,
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "laundry"
+      "name": "fryzjer",
+      "isDone": false,
+      "id": 2
     },
     {
-      "id": 3,
-      "name": "inpost pickup packages"
+      "name": "obiad",
+      "isDone": false,
+      "id": 3
+    },
+    {
+      "name": "przedszkole Szymka",
+      "isDone": false,
+      "id": 4
     }
   ]
 }

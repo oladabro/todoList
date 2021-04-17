@@ -3,15 +3,13 @@ import TodoList from './components/TodoList';
 import EditTodoItem from './components/EditTodoItem';
 import { RecoilRoot } from 'recoil';
 import {
-  HashRouter as Router,
+  BrowserRouter as Router,
   Route,
   Switch,
-  useHistory,
+  useParams,
 } from 'react-router-dom';
 
 function App() {
-  const history = useHistory();
-  console.log(history);
   return (
     <RecoilRoot>
       <Router>
