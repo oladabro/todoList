@@ -6,6 +6,8 @@ import {
   todoListState,
   doneTasksBtnState,
   filteredTasksState,
+  searchTermState,
+  todoListForSearch,
 } from '../shared/globalState';
 import TodoItem from './TodoItem';
 import CreateTodoItem from './CreateTodoItem';
@@ -17,6 +19,13 @@ export default function TodoList() {
   const setTodoList = useSetRecoilState(todoListState);
   const [btnState, setBtnState] = useRecoilState(doneTasksBtnState);
   const todoList = useRecoilValue(filteredTasksState);
+  // const todoListForSearch = useRecoilValue(todoListForSearch);
+  // const searchTerm = useRecoilValue(todoListForSearch);
+  const searchTerm = useRecoilValue(searchTermState);
+
+  const todoListForSearch = todoList.filter((item) =>
+    item.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
 
   useEffect(() => {
     const fetchData = async () => {
@@ -43,7 +52,7 @@ export default function TodoList() {
           </button>
         )}
         <ul>
-          {todoList.map((task) => {
+          {todoListForSearch.map((task) => {
             return <TodoItem key={task.id} task={task} />;
           })}
         </ul>

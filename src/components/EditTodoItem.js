@@ -18,15 +18,14 @@ export default function EditTodoItem() {
     const fetchData = async () => {
       const response = await axios.get(`http://localhost:8000/tasks/${id}`);
       const data = await response.data;
-      console.log(data);
       setInputValue(data.name);
       setInputLength(data.name.length);
     };
     fetchData();
-  }, []);
-  console.log(inputValue);
+  }, [id]);
 
   const saveItem = (id) => {
+    console.log(id);
     axios
       .patch(`${url}/${id}`, {
         name: inputValue,
@@ -35,6 +34,7 @@ export default function EditTodoItem() {
         (response) => {
           const newArray = updateArrayAtIndex(todoList, id, response.data);
           setTodoList([...newArray]);
+          setInputLength(0);
         },
         (error) => {
           console.log(error);

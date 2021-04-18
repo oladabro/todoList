@@ -1,79 +1,49 @@
 {
   "tasks": [
     {
-      "name": "zak",
-      "isDone": true,
+      "name": "fryzjer Karola",
+      "isDone": false,
       "id": 1
     },
     {
-      "name": "fryzjer",
-      "isDone": false,
+      "name": "dentysta Szymek",
+      "isDone": true,
       "id": 2
     },
     {
-      "name": "zebranie w przedszkolu",
+      "name": "zakupy",
       "isDone": false,
       "id": 3
     },
     {
-      "name": "gtfdsafaf",
+      "name": "umyć okna, wyprać zasłony",
       "isDone": false,
       "id": 4
     },
     {
-      "name": "fdsafsafasfsafsafdasfas\nfdsafasfsafads",
+      "name": "napisać maila do Tmobile najpóźniejsz do końca kwietnia",
       "isDone": true,
       "id": 5
     },
     {
-      "name": "fdsafsaf",
+      "name": "Anna Przybylska",
       "isDone": true,
-      "id": 6
+      "id": 7
     },
     {
-      "name": "dfasfafdsfafsafsafff",
-      "isDone": true,
+      "name": "fdsafsadf",
+      "isDone": false,
       "id": 8
     },
     {
-      "name": "fadsfafdfsafsafsafsa",
-      "isDone": true,
+      "name": "Anna Przybylska",
+      "isDone": false,
+      "id": 9
+    },
+    {
+      "name": "Anna Przybylska2",
+      "isDone": false,
       "id": 10
-    },
-    {
-      "name": "Anna Przybylska",
-      "isDone": true,
-      "id": 11
-    },
-    {
-      "name": "CODERS LAB",
-      "isDone": true,
-      "id": 12
-    },
-    {
-      "name": "Anna Przybylska",
-      "isDone": false,
-      "id": 13
-    },
-    {
-      "name": "dsfsafsafsafsffdsfsafsafsafasfsafsafsafasfsafsafff",
-      "isDone": true,
-      "id": 14
-    },
-    {
-      "name": "dfs",
-      "isDone": true,
-      "id": 15
-    },
-    {
-      "name": "Anna Przybylska",
-      "isDone": false,
-      "id": 16
-    },
-    {
-      "name": "fdasfasf",
-      "isDone": true,
-      "id": 17
     }
   ]
 }

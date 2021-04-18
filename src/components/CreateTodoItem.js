@@ -40,17 +40,16 @@ export default function CreateTodoItem() {
         type='text'
         name='name'
         value={inputValue}
-        minlength={minInputLength}
+        minLength={minInputLength}
         maxLength={maxInputLength}
         onChange={onChange}
         placeholder='Type in your task...'
+        required
       />
       <small>
         {inputLength}/{maxInputLength}
       </small>
-      <button id='hide' onClick={(e) => console.log(e)}>
-        Add
-      </button>
+      <button>Add</button>
     </form>
   );
 }

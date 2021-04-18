@@ -1,4 +1,4 @@
-import { atom, errorSelector, selector } from 'recoil';
+import { atom, selector } from 'recoil';
 
 export const todoListState = atom({
   key: 'todoListState',
@@ -44,5 +44,24 @@ export const filteredTasksState = selector({
     } else if (!btnStatus) {
       return taskList;
     }
+  },
+});
+
+export const searchTermState = atom({
+  key: 'searchTermState',
+  default: '',
+});
+
+export const todoListForSearch = selector({
+  key: 'todoListForSearch',
+  get: ({ get }) => {
+    const searchTerm = get(searchTermState);
+    const todoList = get(todoListState);
+
+    const todoListForSearch = todoList.filter((item) =>
+      item.name.toLowerCase().includes(searchTerm.toLowerCase())
+    );
+
+    return todoListForSearch;
   },
 });
