@@ -1,14 +1,14 @@
 import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
-import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil';
+import { useRecoilState, useSetRecoilState } from 'recoil';
 import { todoListState, inputTextState } from '../shared/globalState';
-import { url, maxInputLength } from '../shared/utils';
-import { useHistory } from 'react-router-dom';
+import { url, maxInputLength, minInputLength } from '../shared/utils';
 
 export default function CreateTodoItem() {
   const [inputValue, setInputValue] = useState('');
-  const [todoList, setTodoList] = useRecoilState(todoListState);
+  // const [todoList, setTodoList] = useRecoilState(todoListState);
+  const setTodoList = useSetRecoilState(todoListState);
   const [inputLength, setInputLength] = useRecoilState(inputTextState);
 
   const onChange = (e) => {
@@ -40,13 +40,17 @@ export default function CreateTodoItem() {
         type='text'
         name='name'
         value={inputValue}
-        maxlength='50'
+        minlength={minInputLength}
+        maxLength={maxInputLength}
         onChange={onChange}
+        placeholder='Type in your task...'
       />
       <small>
         {inputLength}/{maxInputLength}
       </small>
-      <button>Add</button>
+      <button id='hide' onClick={(e) => console.log(e)}>
+        Add
+      </button>
     </form>
   );
 }

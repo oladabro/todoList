@@ -1,8 +1,8 @@
 {
   "tasks": [
     {
-      "name": "zakupy",
-      "isDone": false,
+      "name": "zak",
+      "isDone": true,
       "id": 1
     },
     {
@@ -16,34 +16,64 @@
       "id": 3
     },
     {
-      "name": "fdsafafdsfasfasfasf",
+      "name": "gtfdsafaf",
       "isDone": false,
       "id": 4
     },
     {
       "name": "fdsafsafasfsafsafdasfas\nfdsafasfsafads",
-      "isDone": false,
+      "isDone": true,
       "id": 5
     },
     {
       "name": "fdsafsaf",
-      "isDone": false,
+      "isDone": true,
       "id": 6
     },
     {
-      "name": "csdfsadfasfasfasfsafsafasfasfsafsafsafsafadsfasdas",
-      "isDone": false,
-      "id": 7
-    },
-    {
-      "name": "dfasfafdsfafsafsafafsafsaf",
-      "isDone": false,
+      "name": "dfasfafdsfafsafsafff",
+      "isDone": true,
       "id": 8
     },
     {
-      "name": "dsadsadsadaddsadadadasdadsadsasadsadasdsadasdasdad",
+      "name": "fadsfafdfsafsafsafsa",
+      "isDone": true,
+      "id": 10
+    },
+    {
+      "name": "Anna Przybylska",
+      "isDone": true,
+      "id": 11
+    },
+    {
+      "name": "CODERS LAB",
+      "isDone": true,
+      "id": 12
+    },
+    {
+      "name": "Anna Przybylska",
       "isDone": false,
-      "id": 9
+      "id": 13
+    },
+    {
+      "name": "dsfsafsafsafsffdsfsafsafsafasfsafsafsafasfsafsafff",
+      "isDone": true,
+      "id": 14
+    },
+    {
+      "name": "dfs",
+      "isDone": true,
+      "id": 15
+    },
+    {
+      "name": "Anna Przybylska",
+      "isDone": false,
+      "id": 16
+    },
+    {
+      "name": "fdasfasf",
+      "isDone": true,
+      "id": 17
     }
   ]
 }

@@ -2,23 +2,17 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
-import { todoListState } from '../shared/globalState';
+import { todoListState, inputTextState } from '../shared/globalState';
 import axios from 'axios';
-import { url, updateArrayAtIndex } from '../shared/utils';
+import { url, updateArrayAtIndex, maxInputLength } from '../shared/utils';
 
 export default function EditTodoItem() {
   const [todoList, setTodoList] = useRecoilState(todoListState);
   const [inputValue, setInputValue] = useState('');
+  const [inputLength, setInputLength] = useRecoilState(inputTextState);
 
   const history = useHistory();
   const { id } = useParams();
-
-  // const resolveResponse = (resp) => {
-  //   if (resp.ok) {
-  //     return resp.json();
-  //   }
-  //   throw new Error('błąd połaczenia');
-  // };
 
   useEffect(() => {
     const fetchData = async () => {
@@ -26,6 +20,7 @@ export default function EditTodoItem() {
       const data = await response.data;
       console.log(data);
       setInputValue(data.name);
+      setInputLength(data.name.length);
     };
     fetchData();
   }, []);
@@ -51,6 +46,7 @@ export default function EditTodoItem() {
 
   const handleInputValue = (e) => {
     setInputValue(e.target.value);
+    setInputLength(e.target.value.length);
   };
 
   const goHome = () => {
@@ -59,7 +55,17 @@ export default function EditTodoItem() {
 
   return (
     <div>
-      <input type='text' value={inputValue} onChange={handleInputValue} />
+      <input
+        type='text'
+        value={inputValue}
+        onChange={handleInputValue}
+        maxLength={maxInputLength}
+      />
+
+      <small>
+        {inputLength}/{maxInputLength}
+      </small>
+
       <button onClick={(e) => saveItem(id)}>Save</button>
     </div>
   );

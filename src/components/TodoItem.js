@@ -19,13 +19,14 @@ export default function TodoItem({ task }) {
   };
 
   const toggleIsDone = () => {
-    const newArray = updateArrayAtIndex(todoList, task.id, {
-      id: task.id,
-      name: task.name,
-      isDone: !task.isDone,
-    });
-
-    setTodoList([...newArray]);
+    axios
+      .patch(`${url}/${task.id}`, {
+        isDone: !task.isDone,
+      })
+      .then((resp) => {
+        const newArray = updateArrayAtIndex(todoList, task.id, resp.data);
+        setTodoList([...newArray]);
+      });
   };
 
   return (
