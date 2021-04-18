@@ -10,8 +10,6 @@ import { url } from '../shared/utils';
 
 export default function TodoList() {
   const [todoList, setTodoList] = useRecoilState(todoListState);
-  // const { id } = useParams();
-  // const history = useHistory();
 
   useEffect(() => {
     const fetchData = async () => {

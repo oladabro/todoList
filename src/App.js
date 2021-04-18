@@ -2,12 +2,7 @@ import './App.css';
 import TodoList from './components/TodoList';
 import EditTodoItem from './components/EditTodoItem';
 import { RecoilRoot } from 'recoil';
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  useParams,
-} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 function App() {
   return (

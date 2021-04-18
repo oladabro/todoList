@@ -9,10 +9,13 @@ export default function TodoItem({ task }) {
   const [todoList, setTodoList] = useRecoilState(todoListState);
 
   const deleteItem = (id) => {
-    axios.delete(`${url}/${id}`).then(() => {
-      const updatedList = removeArrayAtIndex(todoList, id);
-      setTodoList(updatedList);
-    });
+    axios
+      .delete(`${url}/${id}`)
+      .then(() => {
+        const updatedList = removeArrayAtIndex(todoList, id);
+        setTodoList(updatedList);
+      })
+      .catch((err) => console.error(err));
   };
 
   const toggleIsDone = () => {

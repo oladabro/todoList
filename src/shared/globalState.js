@@ -5,7 +5,7 @@ export const todoListState = atom({
   default: [],
 });
 
-export const newItemState = atom({
-  key: 'newItemState',
-  default: '',
+export const inputTextState = atom({
+  key: 'inputTextState',
+  default: 0,
 });
