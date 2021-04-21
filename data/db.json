@@ -1,0 +1,29 @@
+{
+  "tasks": [
+    {
+      "name": "zrobić zakupy",
+      "isDone": true,
+      "id": 1
+    },
+    {
+      "name": "ugotować obiad",
+      "isDone": true,
+      "id": 2
+    },
+    {
+      "name": "wysłać paczkę inpostu playmobile komisariat",
+      "isDone": true,
+      "id": 3
+    },
+    {
+      "name": "wysłać pismo o rezygnacji z umowy do Tmobile",
+      "isDone": true,
+      "id": 4
+    },
+    {
+      "name": "wizyta w przychodni Brodala 8.30",
+      "isDone": true,
+      "id": 5
+    }
+  ]
+}
