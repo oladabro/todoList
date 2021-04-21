@@ -2,9 +2,10 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
-import { todoListState, inputTextState } from '../shared/globalState';
+import { todoListState, inputTextState } from '../../shared/globalState';
 import axios from 'axios';
-import { url, updateArrayAtIndex, maxInputLength } from '../shared/utils';
+import { url, updateArrayAtIndex, maxInputLength } from '../../shared/utils';
+import { Button } from './EditToDoItemStyle';
 
 export default function EditTodoItem() {
   const [todoList, setTodoList] = useRecoilState(todoListState);
@@ -66,7 +67,9 @@ export default function EditTodoItem() {
         {inputLength}/{maxInputLength}
       </small>
 
-      <button onClick={(e) => saveItem(id)}>Save</button>
+      <Button padding='10px 15px' onClick={(e) => saveItem(id)}>
+        Save
+      </Button>
     </div>
   );
 }

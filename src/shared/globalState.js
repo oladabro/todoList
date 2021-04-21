@@ -52,16 +52,27 @@ export const searchTermState = atom({
   default: '',
 });
 
-export const todoListForSearch = selector({
-  key: 'todoListForSearch',
+export const thresholdState = selector({
+  key: 'thresholdState',
   get: ({ get }) => {
-    const searchTerm = get(searchTermState);
-    const todoList = get(todoListState);
+    const percent = get(tasksCompletionState);
 
-    const todoListForSearch = todoList.filter((item) =>
-      item.name.toLowerCase().includes(searchTerm.toLowerCase())
-    );
+    const threshold = {
+      0: 'The hardest thing is to start',
+      10: 'Uuuu you are a bit lazy',
+      20: 'Not in the mood for work today?',
+      30: 'Go get yourself a cup of coffee, you are on a good track',
+      40: 'Nice, you are warming up!',
+      50: 'Well done! you are half way through!',
+      60: 'You are getting closer. Do not give up!',
+      70: 'Not many left',
+      80: 'You are almost there!',
+      90: 'Well done! you are a doer!',
+      100: 'Level pro achieved',
+    };
 
-    return todoListForSearch;
+    if (percent == 100) {
+      return <div>Level pro achieved</div>;
+    }
   },
 });

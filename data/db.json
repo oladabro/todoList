@@ -1,49 +1,29 @@
 {
   "tasks": [
     {
-      "name": "fryzjer Karola",
-      "isDone": false,
+      "name": "zrobić zakupy",
+      "isDone": true,
       "id": 1
     },
     {
-      "name": "dentysta Szymek",
+      "name": "ugotować obiad",
       "isDone": true,
       "id": 2
     },
     {
-      "name": "zakupy",
-      "isDone": false,
+      "name": "wysłać paczkę inpostu playmobile komisariat",
+      "isDone": true,
       "id": 3
     },
     {
-      "name": "umyć okna, wyprać zasłony",
-      "isDone": false,
+      "name": "wysłać pismo o rezygnacji z umowy do Tmobile",
+      "isDone": true,
       "id": 4
     },
     {
-      "name": "napisać maila do Tmobile najpóźniejsz do końca kwietnia",
+      "name": "wizyta w przychodni Brodala 8.30",
       "isDone": true,
       "id": 5
-    },
-    {
-      "name": "Anna Przybylska",
-      "isDone": true,
-      "id": 7
-    },
-    {
-      "name": "fdsafsadf",
-      "isDone": false,
-      "id": 8
-    },
-    {
-      "name": "Anna Przybylska",
-      "isDone": false,
-      "id": 9
-    },
-    {
-      "name": "Anna Przybylska2",
-      "isDone": false,
-      "id": 10
     }
   ]
 }

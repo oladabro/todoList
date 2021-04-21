@@ -12,8 +12,10 @@ import {
 import TodoItem from './TodoItem';
 import CreateTodoItem from './CreateTodoItem';
 import { url } from '../shared/utils';
-import TodoStats from './TodoStats';
+import TodoStats from './TodoStats/TodoStats';
 import SearchBar from './SearchBar';
+import Header from './Header/Header';
+import { AppContainerStyle } from '../shared/AppContainerStyle';
 
 export default function TodoList() {
   const setTodoList = useSetRecoilState(todoListState);
@@ -38,9 +40,9 @@ export default function TodoList() {
   }, []);
 
   return (
-    <>
+    <AppContainerStyle>
+      <Header />
       <TodoStats />
-
       <CreateTodoItem />
       <SearchBar />
       <section>
@@ -57,6 +59,6 @@ export default function TodoList() {
           })}
         </ul>
       </section>
-    </>
+    </AppContainerStyle>
   );
 }

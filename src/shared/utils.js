@@ -15,3 +15,5 @@ export const removeArrayAtIndex = (array, id) => {
 export const maxInputLength = 210;
 
 export const minInputLength = 2;
+
+export const name = 'Ola';
