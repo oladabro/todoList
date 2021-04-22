@@ -11,6 +11,11 @@ export default function TodoStats() {
 
   return (
     <Section>
+      <img
+        src={require(`../../images/tasks.jpg`).default}
+        alt='tasks_photo'
+        width='200px'
+      />
       <h3>Here are your statistics:</h3>
       <p>
         Total task: <strong>{status.all} </strong>
