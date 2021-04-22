@@ -2,7 +2,7 @@ import React from 'react';
 import { useEffect, useState } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
-import { todoListState, inputTextState } from '../../shared/globalState';
+import { todoListState, inputTextState } from '../../state/globalState';
 import axios from 'axios';
 import { url, updateArrayAtIndex, maxInputLength } from '../../shared/utils';
 import { Button } from './EditToDoItemStyle';

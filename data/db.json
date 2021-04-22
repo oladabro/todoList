@@ -3,27 +3,50 @@
     {
       "name": "zrobić zakupy",
       "isDone": true,
+      "priority": "high",
       "id": 1
     },
     {
       "name": "ugotować obiad",
       "isDone": true,
+      "priority": "low",
       "id": 2
     },
     {
       "name": "wysłać paczkę inpostu playmobile komisariat",
       "isDone": true,
+      "priority": "medium",
       "id": 3
     },
     {
       "name": "wysłać pismo o rezygnacji z umowy do Tmobile",
       "isDone": true,
+      "priority": "high",
       "id": 4
     },
     {
       "name": "wizyta w przychodni Brodala 8.30",
       "isDone": true,
+      "priority": "high",
       "id": 5
+    },
+    {
+      "name": "zareklamować spodnie narciarskie Szymka",
+      "isDone": false,
+      "priority": "high",
+      "id": 6
+    },
+    {
+      "name": "zadzwonić do Aureli",
+      "isDone": false,
+      "priority": "High",
+      "id": 7
+    },
+    {
+      "name": "dfsaf",
+      "isDone": false,
+      "priority": "low",
+      "id": 8
     }
   ]
 }

@@ -4,4 +4,6 @@ export const HeaderStyle = styled.div`
   font-size: 1.5rem;
   text-align: center;
   color: #8c97fc;
+  color: black;
+  line-height: 2;
 `;

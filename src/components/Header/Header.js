@@ -1,13 +1,14 @@
 import React from 'react';
-import { name } from '../../shared/utils';
+
 import { HeaderStyle } from './HeaderStyle';
 
 export default function Header() {
-  const date = new Date().toDateString();
+  const date = new Date().toDateString().slice(0, -5);
+
   return (
     <HeaderStyle>
-      <h1>Hi {name}</h1>
-      <h3>{`It's ${date},\nlet see what's on your todo list for today`}</h3>
+      <h3>{`It's ${date},`}</h3>
+      <h3>{`let see what's on your todo list for today`}</h3>
     </HeaderStyle>
   );
 }

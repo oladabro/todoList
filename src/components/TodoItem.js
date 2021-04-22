@@ -2,7 +2,7 @@ import React from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
-import { todoListState } from '../shared/globalState';
+import { todoListState } from '../state/globalState';
 import { url, updateArrayAtIndex, removeArrayAtIndex } from '../shared/utils';
 
 export default function TodoItem({ task }) {
@@ -33,6 +33,7 @@ export default function TodoItem({ task }) {
     <>
       <li>
         <div>
+          <p>{task.priority} Priority</p>
           <span>{task.name}</span>
           <input
             type='checkbox'

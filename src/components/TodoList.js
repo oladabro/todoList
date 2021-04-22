@@ -1,28 +1,30 @@
 import React from 'react';
 import axios from 'axios';
 import { useEffect } from 'react';
-import { useRecoilState, useRecoilValue, useSetRecoilState } from 'recoil';
+import { useRecoilValue, useSetRecoilState } from 'recoil';
 import {
   todoListState,
-  doneTasksBtnState,
   filteredTasksState,
   searchTermState,
-  todoListForSearch,
-} from '../shared/globalState';
+} from '../state/globalState';
 import TodoItem from './TodoItem';
-import CreateTodoItem from './CreateTodoItem';
+import CreateTodoItem from './CreateTodoItem/CreateTodoItem';
 import { url } from '../shared/utils';
 import TodoStats from './TodoStats/TodoStats';
 import SearchBar from './SearchBar';
 import Header from './Header/Header';
 import { AppContainerStyle } from '../shared/AppContainerStyle';
+import Welcome from './Welcome/Welcome';
+import { StatsContainerStyle } from '../shared/StatsContainerStyle';
+import ShowHideTasksBtn from './ShowHideTasksBtn';
+import { TasksListStyle } from './TasksListStyle';
+
+// ----------------------------------------
 
 export default function TodoList() {
   const setTodoList = useSetRecoilState(todoListState);
-  const [btnState, setBtnState] = useRecoilState(doneTasksBtnState);
+
   const todoList = useRecoilValue(filteredTasksState);
-  // const todoListForSearch = useRecoilValue(todoListForSearch);
-  // const searchTerm = useRecoilValue(todoListForSearch);
   const searchTerm = useRecoilValue(searchTermState);
 
   const todoListForSearch = todoList.filter((item) =>
@@ -41,24 +43,19 @@ export default function TodoList() {
 
   return (
     <AppContainerStyle>
-      <Header />
-      <TodoStats />
+      <Welcome />
+      <StatsContainerStyle>
+        <Header />
+        <TodoStats />
+      </StatsContainerStyle>
       <CreateTodoItem />
       <SearchBar />
-      <section>
-        {btnState ? (
-          <button onClick={() => setBtnState(!btnState)}>Show all tasks</button>
-        ) : (
-          <button onClick={() => setBtnState(!btnState)}>
-            Hide finished tasks
-          </button>
-        )}
-        <ul>
-          {todoListForSearch.map((task) => {
-            return <TodoItem key={task.id} task={task} />;
-          })}
-        </ul>
-      </section>
+      <ShowHideTasksBtn />
+      <TasksListStyle>
+        {todoListForSearch.map((task) => {
+          return <TodoItem key={task.id} task={task} />;
+        })}
+      </TasksListStyle>
     </AppContainerStyle>
   );
 }
