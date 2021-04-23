@@ -1,22 +1,22 @@
 {
   "tasks": [
     {
-      "name": "zadzwonić do Aureli",
+      "name": "zareklamować spodnie narciarskie",
+      "isDone": false,
+      "priority": "Medium",
+      "id": 11
+    },
+    {
+      "name": "odkurzyć",
       "isDone": false,
       "priority": "High",
-      "id": 7
+      "id": 12
     },
     {
       "name": "zakupy lidl",
       "isDone": true,
-      "priority": "low",
-      "id": 8
-    },
-    {
-      "name": "umyć moje nike",
-      "isDone": false,
-      "priority": "low",
-      "id": 9
+      "priority": "Low",
+      "id": 13
     }
   ]
 }

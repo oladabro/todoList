@@ -10,7 +10,7 @@ export default function Header() {
       <img
         src={require(`../../images/tasks1.jpg`).default}
         alt='tasks_photo'
-        height='160px'
+        height='150px'
       />
       <h3>{`It's ${date},`}</h3>
       <h3>{`let see what's on your todo list for today`}</h3>

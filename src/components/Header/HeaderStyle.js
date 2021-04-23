@@ -1,13 +1,13 @@
 import styled from 'styled-components';
 
 export const HeaderStyle = styled.div`
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: center;
   color: #8c97fc;
   color: black;
   line-height: 2;
   position: relative;
-  height: 200px;
+  height: 180px;
 
   & h3:nth-of-type(2) {
     width: 75%;
@@ -18,16 +18,17 @@ export const HeaderStyle = styled.div`
   }
 
   & h3 {
-    margin-top: 20px;
+    margin-top: 10px;
     position: relative;
     z-index: 10;
+    font-size: 1.4rem;
   }
 
   & img {
     position: absolute;
     top: 60%;
     transform: translateY(-60%);
-    right: 20px;
+    right: 15px;
     z-index: 1;
   }
 `;

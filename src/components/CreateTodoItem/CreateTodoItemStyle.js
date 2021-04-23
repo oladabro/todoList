@@ -8,6 +8,7 @@ export const CreateTodoItemStyle = styled.form`
   display: flex;
   justify-content: space-around;
   align-items: center;
+  border-radius: 0 0 30px 30px;
 
   & div:first-child {
     width: 50%;
@@ -34,7 +35,9 @@ export const CreateTodoItemStyle = styled.form`
   }
 
   & small {
-    padding-left: 5px;
+    width: 1rem;
+    margin-left: 5px;
+    padding: 0 5px;
     font-size: 0.65rem;
   }
 
@@ -46,6 +49,8 @@ export const CreateTodoItemStyle = styled.form`
     transition: 0.3s;
     outline: none;
     border: 2px solid transparent;
+    background-color: #8c97fc;
+    cursor: pointer;
 
     &:focus {
       border: 2px solid #8c97fc;
@@ -53,7 +58,7 @@ export const CreateTodoItemStyle = styled.form`
   }
 
   & button:hover {
-    background-color: #8c97fc;
+    background-color: #91ead5;
   }
 
   & select {
@@ -62,7 +67,9 @@ export const CreateTodoItemStyle = styled.form`
     border-radius: 5px;
     outline: none;
     border: 2px solid transparent;
-    font-size: 1.1rem;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: white;
   }
 
   & select:focus {

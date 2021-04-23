@@ -2,8 +2,15 @@ import React from 'react';
 import axios from 'axios';
 import { Link } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
-import { todoListState } from '../state/globalState';
-import { url, updateArrayAtIndex, removeArrayAtIndex } from '../shared/utils';
+import { todoListState } from '../../state/globalState';
+import {
+  url,
+  updateArrayAtIndex,
+  removeArrayAtIndex,
+} from '../../shared/utils';
+import { TodoItemStyle } from './TodoItemStyle';
+
+// ------------------------------------------------------
 
 export default function TodoItem({ task }) {
   const [todoList, setTodoList] = useRecoilState(todoListState);
@@ -31,10 +38,12 @@ export default function TodoItem({ task }) {
 
   return (
     <>
-      <li>
+      <TodoItemStyle color={task.priority}>
         <div>
           <p>{task.priority} Priority</p>
           <span>{task.name}</span>
+        </div>
+        <div>
           <input
             type='checkbox'
             checked={task.isDone}
@@ -44,7 +53,7 @@ export default function TodoItem({ task }) {
           <button onClick={(e) => deleteItem(task.id)}>X</button>
           <Link to={`/${task.id}`}>Edit</Link>
         </div>
-      </li>
+      </TodoItemStyle>
     </>
   );
 }

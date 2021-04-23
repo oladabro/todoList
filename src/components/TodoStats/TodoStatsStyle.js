@@ -6,7 +6,7 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   background-color: #91ead5;
-  padding: 30px 0;
+  padding: 20px 0;
   line-height: 2;
   position: relative;
 
@@ -14,6 +14,6 @@ export const Section = styled.section`
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 40px;
+    left: 20px;
   }
 `;

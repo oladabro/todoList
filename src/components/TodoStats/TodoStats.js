@@ -14,7 +14,7 @@ export default function TodoStats() {
       <img
         src={require(`../../images/tasks.jpg`).default}
         alt='tasks_photo'
-        width='200px'
+        height='150px'
       />
 
       <h3>Here are your statistics:</h3>

@@ -7,7 +7,7 @@ import {
   filteredTasksState,
   searchTermState,
 } from '../state/globalState';
-import TodoItem from './TodoItem';
+import TodoItem from '../components/TodoItem/TodoItem';
 import CreateTodoItem from './CreateTodoItem/CreateTodoItem';
 import { url } from '../shared/utils';
 import TodoStats from './TodoStats/TodoStats';
@@ -18,6 +18,7 @@ import Welcome from './Welcome/Welcome';
 import { StatsContainerStyle } from '../shared/StatsContainerStyle';
 import ShowHideTasksBtn from './ShowHideTasksBtn';
 import { TasksListStyle } from './TasksListStyle';
+import { TodoItemStyle } from '../components/TodoItem/TodoItemStyle';
 
 // ----------------------------------------
 
@@ -47,8 +48,8 @@ export default function TodoList() {
       <StatsContainerStyle>
         <Header />
         <TodoStats />
+        <CreateTodoItem />
       </StatsContainerStyle>
-      <CreateTodoItem />
       <SearchBar />
       <ShowHideTasksBtn />
       <TasksListStyle>
