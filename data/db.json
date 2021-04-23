@@ -8,9 +8,15 @@
     },
     {
       "name": "zakupy lidl",
-      "isDone": false,
+      "isDone": true,
       "priority": "low",
       "id": 8
+    },
+    {
+      "name": "umyć moje nike",
+      "isDone": false,
+      "priority": "low",
+      "id": 9
     }
   ]
 }

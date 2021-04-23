@@ -14,6 +14,6 @@ export const Section = styled.section`
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    left: 20px;
+    left: 40px;
   }
 `;
