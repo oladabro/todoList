@@ -9,6 +9,17 @@ export const TodoItemStyle = styled.li`
   justify-content: space-between;
   position: relative;
 
+  & div:nth-of-type(1) {
+    width: 60%;
+  }
+  & div:nth-of-type(2) {
+    width: 40%;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: flex-end;
+  }
+
   & div:first-child::before {
     content: '';
     display: inline-block;
@@ -54,10 +65,14 @@ export const TodoItemStyle = styled.li`
     padding-right: 10px;
   }
 
-  & input {
-    margin: 10px;
+  & div div {
     cursor: pointer;
-    background-color: white;
+    border: 2px solid transparent;
+    padding: 5px 15px;
+
+    &:focus {
+      border: 2px solid #8c97fc;
+    }
   }
 
   & button,
@@ -67,30 +82,21 @@ export const TodoItemStyle = styled.li`
     border-radius: 5px;
     border: none;
     font-size: 1.1rem;
-    font-weight: 600;
+    font-weight: 700;
     transition: 0.3s;
     outline: none;
     border: 2px solid transparent;
-    color: #484342;
-    background-color: #8ebee3;
-    background-color: #fac12d;
+    color: #7a7674;
+    background-color: transparent;
     cursor: pointer;
+
+    & svg:hover {
+      color: #484342;
+      transform: scale(1.1);
+    }
 
     &:focus {
       border: 2px solid #8c97fc;
-    }
-
-    &:hover {
-      background-color: #8c97fc;
-    }
-  }
-
-  & a {
-    text-decoration: none;
-    background-color: #8c97fc;
-
-    &:hover {
-      background-color: #fac12d;
     }
   }
 

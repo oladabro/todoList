@@ -19,7 +19,7 @@ export default function TodoStats() {
 
       <h3>Here are your statistics:</h3>
       <p>
-        Total task: <strong>{status.all} </strong>
+        Total tasks: <strong>{status.all} </strong>
       </p>
       <p>
         Tasks completed: <strong>{status.completed} </strong>

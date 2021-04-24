@@ -4,5 +4,5 @@ export const StatsContainerStyle = styled.section`
   width: 100%;
   background-color: white;
   background-color: #8c97fc;
-  border-radius: 30px;
+  border-radius: 15px;
 `;

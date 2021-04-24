@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export const HeaderStyle = styled.div`
+export const HeaderStyle = styled.header`
   font-size: 1.2rem;
   text-align: center;
   color: #8c97fc;
@@ -15,6 +15,7 @@ export const HeaderStyle = styled.div`
     padding-left: 50px;
     position: relative;
     z-index: 10;
+    font-weight: 400;
   }
 
   & h3 {

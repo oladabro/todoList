@@ -19,6 +19,7 @@ import { StatsContainerStyle } from '../shared/StatsContainerStyle';
 import ShowHideTasksBtn from './ShowHideTasksBtn';
 import { TasksListStyle } from './TasksListStyle';
 import { TodoItemStyle } from '../components/TodoItem/TodoItemStyle';
+import { SearchSectionStyle } from './SearchSectionStyle';
 
 // ----------------------------------------
 
@@ -50,8 +51,10 @@ export default function TodoList() {
         <TodoStats />
         <CreateTodoItem />
       </StatsContainerStyle>
-      <SearchBar />
-      <ShowHideTasksBtn />
+      <SearchSectionStyle>
+        <SearchBar />
+        <ShowHideTasksBtn />
+      </SearchSectionStyle>
       <TasksListStyle>
         {todoListForSearch.map((task) => {
           return <TodoItem key={task.id} task={task} />;

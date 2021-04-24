@@ -1,6 +1,6 @@
 import React from 'react';
 import axios from 'axios';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { useRecoilState } from 'recoil';
 import { todoListState } from '../../state/globalState';
 import {
@@ -9,6 +9,7 @@ import {
   removeArrayAtIndex,
 } from '../../shared/utils';
 import { TodoItemStyle } from './TodoItemStyle';
+import { FaRegTrashAlt, FaRegEdit } from 'react-icons/fa';
 
 // ------------------------------------------------------
 
@@ -44,14 +45,19 @@ export default function TodoItem({ task }) {
           <span>{task.name}</span>
         </div>
         <div>
-          <input
-            type='checkbox'
-            checked={task.isDone}
-            onChange={toggleIsDone}
-          />
-
-          <button onClick={(e) => deleteItem(task.id)}>X</button>
-          <Link to={`/${task.id}`}>Edit</Link>
+          <div>
+            <input
+              type='checkbox'
+              checked={task.isDone}
+              onChange={toggleIsDone}
+            />
+          </div>
+          <Link to={`/${task.id}`}>
+            <FaRegEdit />
+          </Link>
+          <button onClick={(e) => deleteItem(task.id)}>
+            <FaRegTrashAlt />
+          </button>
         </div>
       </TodoItemStyle>
     </>

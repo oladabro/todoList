@@ -5,7 +5,7 @@ import { doneTasksBtnState } from '../state/globalState';
 export default function ShowHideTasksBtn() {
   const [btnState, setBtnState] = useRecoilState(doneTasksBtnState);
   return (
-    <section>
+    <div>
       {btnState ? (
         <button onClick={() => setBtnState(!btnState)}>Show all tasks</button>
       ) : (
@@ -13,6 +13,6 @@ export default function ShowHideTasksBtn() {
           Hide finished tasks
         </button>
       )}
-    </section>
+    </div>
   );
 }

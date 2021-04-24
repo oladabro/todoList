@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "name": "zareklamować spodnie narciarskie",
-      "isDone": false,
-      "priority": "Medium",
-      "id": 11
-    },
-    {
       "name": "odkurzyć",
       "isDone": false,
       "priority": "High",
@@ -17,6 +11,12 @@
       "isDone": true,
       "priority": "Low",
       "id": 13
+    },
+    {
+      "name": "zadzwonić do Aureli",
+      "isDone": true,
+      "priority": "High",
+      "id": 14
     }
   ]
 }

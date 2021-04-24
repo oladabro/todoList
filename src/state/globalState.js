@@ -77,7 +77,7 @@ export const thresholdState = selector({
   },
 });
 
-export const priorityState = atom({
-  key: 'priorityState',
-  default: 'low',
-});
+// export const priorityState = atom({
+//   key: 'priorityState',
+//   default: 'Low',
+// });

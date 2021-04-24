@@ -2,20 +2,16 @@ import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
 import { useRecoilState, useSetRecoilState } from 'recoil';
-import {
-  todoListState,
-  inputTextState,
-  priorityState,
-} from '../../state/globalState';
+import { todoListState, inputTextState } from '../../state/globalState';
 import { url, maxInputLength, minInputLength } from '../../shared/utils';
 import { CreateTodoItemStyle } from './CreateTodoItemStyle';
 
 // -----------------------------------------------
 
 export default function CreateTodoItem() {
-  const [priorityValue, setPriorityValue] = useState('low');
+  const [priorityValue, setPriorityValue] = useState('Low');
   const [inputValue, setInputValue] = useState('');
-  // const [todoList, setTodoList] = useRecoilState(todoListState);
+
   const setTodoList = useSetRecoilState(todoListState);
   const [inputLength, setInputLength] = useRecoilState(inputTextState);
 
@@ -62,6 +58,7 @@ export default function CreateTodoItem() {
           {inputLength}/{maxInputLength}
         </small>
       </div>
+
       <div>
         <label htmlFor='priority'>Set priority</label>
         <select

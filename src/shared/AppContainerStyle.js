@@ -4,7 +4,7 @@ export const AppContainerStyle = styled.div`
   width: 50vw;
   min-height: 60%;
   margin: 20px auto;
-  border-radius: 30px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
   justify-content: center;
