@@ -16,7 +16,7 @@ export default function TodoStats() {
         alt='tasks_photo'
         height='150px'
       />
-
+      {/* <div> */}
       <h3>Here are your statistics:</h3>
       <p>
         Total tasks: <strong>{status.all} </strong>
@@ -30,7 +30,7 @@ export default function TodoStats() {
       <p>
         Percent completed: <strong>{status.percent.toFixed(0)}%</strong>
       </p>
-
+      {/* </div> */}
       {message}
     </Section>
   );

@@ -43,8 +43,7 @@ export default function CreateTodoItem() {
     <CreateTodoItemStyle onSubmit={addItem}>
       <div>
         <textarea
-          rows='6'
-          // columns='22'
+          rows='3'
           type='text'
           name='name'
           value={inputValue}

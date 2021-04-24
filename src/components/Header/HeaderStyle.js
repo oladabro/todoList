@@ -1,28 +1,35 @@
 import styled from 'styled-components';
+import { borderRadius } from '../../shared/theme';
 
 export const HeaderStyle = styled.header`
-  font-size: 1.2rem;
+  grid-column: 1/3;
   text-align: center;
-  color: #8c97fc;
   color: black;
-  line-height: 2;
+  line-height: 1.5;
   position: relative;
-  height: 180px;
+  padding-top: 15px;
+  /* height: 180px; */
+
+  & h1 {
+    text-align: center;
+    align-self: end;
+    font-size: 1.4rem;
+  }
 
   & h3:nth-of-type(2) {
-    width: 75%;
-    text-align: start;
-    padding-left: 50px;
+    /* width: 75%; */
+    text-align: center;
+    /* padding-left: 50px; */
     position: relative;
     z-index: 10;
     font-weight: 400;
   }
 
   & h3 {
-    margin-top: 10px;
+    /* margin-top: 10px; */
     position: relative;
     z-index: 10;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
   }
 
   & img {

@@ -8,6 +8,8 @@ export const TodoItemStyle = styled.li`
   display: flex;
   justify-content: space-between;
   position: relative;
+  grid-column: 2/3;
+  grid-auto-rows: 4/5;
 
   & div:nth-of-type(1) {
     width: 60%;

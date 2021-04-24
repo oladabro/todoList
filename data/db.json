@@ -1,22 +1,52 @@
 {
   "tasks": [
     {
-      "name": "odkurzyć",
-      "isDone": false,
-      "priority": "High",
-      "id": 12
-    },
-    {
-      "name": "zakupy lidl",
+      "name": "1",
       "isDone": true,
       "priority": "Low",
-      "id": 13
+      "id": 1
     },
     {
-      "name": "zadzwonić do Aureli",
-      "isDone": true,
-      "priority": "High",
-      "id": 14
+      "name": "2",
+      "isDone": false,
+      "priority": "Low",
+      "id": 2
+    },
+    {
+      "name": "3",
+      "isDone": false,
+      "priority": "Low",
+      "id": 3
+    },
+    {
+      "name": "4",
+      "isDone": false,
+      "priority": "Low",
+      "id": 4
+    },
+    {
+      "name": "fdsfasfdsafasdfdsafadsfsaf",
+      "isDone": false,
+      "priority": "Low",
+      "id": 6
+    },
+    {
+      "name": "fdsfdsafasfsa",
+      "isDone": false,
+      "priority": "Low",
+      "id": 7
+    },
+    {
+      "name": "fdsafdsafsafas",
+      "isDone": false,
+      "priority": "Low",
+      "id": 8
+    },
+    {
+      "name": "fdsafdsafadsf",
+      "isDone": false,
+      "priority": "Low",
+      "id": 9
     }
   ]
 }

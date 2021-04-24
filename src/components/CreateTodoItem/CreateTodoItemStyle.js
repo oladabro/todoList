@@ -1,14 +1,17 @@
 import styled from 'styled-components';
+import { borderRadius, purple, yellow, green } from '../../shared/theme';
 
 export const CreateTodoItemStyle = styled.form`
+  grid-column: 2/3;
+  grid-row: 2/3;
   margin: 0 auto;
   padding: 30px 35px;
-  background-color: rgba(255, 193, 47, 255);
+  background-color: ${yellow};
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-radius: 0 0 15px 15px;
+  border-radius: ${borderRadius};
 
   & div:first-child {
     width: 55%;
@@ -30,7 +33,7 @@ export const CreateTodoItemStyle = styled.form`
     outline: none;
     border: 2px solid transparent;
     font-family: 'Nunito', sans-serif;
-    font-size: 1rem;
+    font-size: 1em;
 
     &:focus {
       border: 2px solid #8c97fc;
@@ -47,10 +50,10 @@ export const CreateTodoItemStyle = styled.form`
   }
 
   & button {
-    padding: 10px 50px;
+    padding: 10px 15px;
     border-radius: 5px;
     border: none;
-    font-size: 1rem;
+    font-size: 1em;
     transition: 0.3s;
     outline: none;
     border: 2px solid transparent;
@@ -74,7 +77,7 @@ export const CreateTodoItemStyle = styled.form`
     border-radius: 5px;
     outline: none;
     border: 2px solid transparent;
-    font-size: 1rem;
+    font-size: 1em;
     cursor: pointer;
     background-color: white;
     font-family: 'Nunito', sans-serif;

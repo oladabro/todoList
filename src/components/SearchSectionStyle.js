@@ -1,14 +1,16 @@
 import styled from 'styled-components';
+import { borderRadius, purple, yellow, green } from '../shared/theme';
 
 export const SearchSectionStyle = styled.section`
   display: flex;
   justify-content: space-between;
-  margin: 20px 0 10px 0;
-  background-color: #d7d7e2;
-  padding: 30px 35px;
-  border-radius: 15px;
+  margin: 60px 0 30px 0;
+  background-color: ${purple};
+  padding: 15px 35px;
+  border-radius: ${borderRadius};
   height: 40px;
   box-sizing: content-box;
+  grid-template-rows: 3/4;
 
   & form,
   & div {
@@ -24,11 +26,11 @@ export const SearchSectionStyle = styled.section`
   }
 
   & button {
-    /* padding: 10px 30px; */
+    padding: 10px 5px;
     border-radius: 5px;
     border: none;
     font-weight: 700;
-    font-size: 1rem;
+    font-size: 1em;
     transition: all 0.3s;
     outline: none;
     border: 2px solid transparent;
@@ -46,7 +48,7 @@ export const SearchSectionStyle = styled.section`
     }
 
     &:focus {
-      border: 2px solid #8c97fc;
+      border: 2px solid white;
     }
   }
   & input {

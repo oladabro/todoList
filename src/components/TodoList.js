@@ -20,6 +20,8 @@ import ShowHideTasksBtn from './ShowHideTasksBtn';
 import { TasksListStyle } from './TasksListStyle';
 import { TodoItemStyle } from '../components/TodoItem/TodoItemStyle';
 import { SearchSectionStyle } from './SearchSectionStyle';
+import { RightContainerStyle } from './RigthContainerStyle';
+import { LeftContainerStyle } from './LeftContainerStyle';
 
 // ----------------------------------------
 
@@ -45,12 +47,9 @@ export default function TodoList() {
 
   return (
     <AppContainerStyle>
-      <Welcome />
-      <StatsContainerStyle>
-        <Header />
-        <TodoStats />
-        <CreateTodoItem />
-      </StatsContainerStyle>
+      <Header />
+      <TodoStats />
+      <CreateTodoItem />
       <SearchSectionStyle>
         <SearchBar />
         <ShowHideTasksBtn />
@@ -60,6 +59,7 @@ export default function TodoList() {
           return <TodoItem key={task.id} task={task} />;
         })}
       </TasksListStyle>
+      {/* </RightContainerStyle> */}
     </AppContainerStyle>
   );
 }
