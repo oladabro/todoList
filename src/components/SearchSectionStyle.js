@@ -2,19 +2,21 @@ import styled from 'styled-components';
 import { borderRadius, purple, yellow, green } from '../shared/theme';
 
 export const SearchSectionStyle = styled.section`
+  grid-column: 2/3;
+  grid-row: 3/4;
+  align-self: end;
   display: flex;
   justify-content: space-between;
-  margin: 60px 0 30px 0;
+  /* margin: 30px 0 0 0; */
   background-color: ${purple};
-  padding: 15px 35px;
+  padding: 40px 35px;
   border-radius: ${borderRadius};
-  height: 40px;
+  /* height: 40px; */
   box-sizing: content-box;
-  grid-template-rows: 3/4;
 
   & form,
   & div {
-    height: 100%;
+    /* height: 100%; */
   }
 
   & form {
@@ -43,8 +45,6 @@ export const SearchSectionStyle = styled.section`
 
     &:hover {
       background-color: #f3c34b;
-
-      /* background-color: #ffe5ee; */
     }
 
     &:focus {
@@ -64,7 +64,7 @@ export const SearchSectionStyle = styled.section`
     width: 100%;
 
     &:focus {
-      border: 2px solid #8c97fc;
+      border: 2px solid ${green};
     }
   }
 `;

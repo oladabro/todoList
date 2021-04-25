@@ -3,15 +3,16 @@ import { borderRadius, purple, yellow, green } from '../../shared/theme';
 
 export const CreateTodoItemStyle = styled.form`
   grid-column: 2/3;
+  align-self: start;
   grid-row: 2/3;
-  margin: 0 auto;
-  padding: 30px 35px;
+  padding: 40px 35px;
   background-color: ${yellow};
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: ${borderRadius};
+  /* margin-bottom: 50px; */
 
   & div:first-child {
     width: 55%;

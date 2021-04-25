@@ -3,23 +3,21 @@ import { borderRadius, purple, yellow, green } from '../../shared/theme';
 
 export const Section = styled.section`
   grid-column: 1/2;
-  grid-row: 2/5;
+  grid-row: 2/4;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: ${green};
-  padding: 150px 0;
+  padding-bottom: 50px;
   line-height: 2;
   position: relative;
   border-radius: ${borderRadius};
   position: sticky;
   top: 50px;
+  align-self: start;
 
   & h3 {
-    margin-top: 20px;
-  }
-
-  & div {
+    padding-top: 160px;
   }
 
   & img {

@@ -14,8 +14,6 @@ import TodoStats from './TodoStats/TodoStats';
 import SearchBar from './SearchBar';
 import Header from './Header/Header';
 import { AppContainerStyle } from '../shared/AppContainerStyle';
-import Welcome from './Welcome/Welcome';
-import { StatsContainerStyle } from '../shared/StatsContainerStyle';
 import ShowHideTasksBtn from './ShowHideTasksBtn';
 import { TasksListStyle } from './TasksListStyle';
 import { TodoItemStyle } from '../components/TodoItem/TodoItemStyle';

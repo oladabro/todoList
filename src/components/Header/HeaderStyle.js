@@ -1,8 +1,8 @@
 import styled from 'styled-components';
-import { borderRadius } from '../../shared/theme';
 
 export const HeaderStyle = styled.header`
   grid-column: 1/3;
+  grid-row: 1/2;
   text-align: center;
   color: black;
   line-height: 1.5;
