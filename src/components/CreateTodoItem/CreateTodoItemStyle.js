@@ -61,6 +61,7 @@ export const CreateTodoItemStyle = styled.form`
     cursor: pointer;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+    color: #161515;
 
     &:focus {
       border: 2px solid white;
@@ -82,6 +83,7 @@ export const CreateTodoItemStyle = styled.form`
     background-color: white;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+    color: #161515;
   }
 
   & select:focus {

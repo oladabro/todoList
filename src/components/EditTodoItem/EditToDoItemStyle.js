@@ -7,22 +7,41 @@ export const Button = styled.button`
   padding: ${(props) => props.padding};
   background-color: ${theme.purple};
   align-self: end;
+  border: 2px solid transparent;
+  border-radius: ${theme.borderRadius};
+  font-weight: 700;
+  font-size: 1em;
+  color: #161515;
+  transition: all 0.3s;
 
   &:hover {
     cursor: pointer;
+    background-color: ${theme.green};
+  }
+  &:focus {
+    outline: none;
+    border: 2px solid ${theme.green};
   }
 `;
 
 export const EditTodoItemStyle = styled.section`
   display: flex;
-  justify-items: center;
+  justify-content: center;
   align-items: center;
   width: 60vw;
   height: 100vh;
 
   & main {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 0.6fr;
+    grid-column-gap: 10px;
+    padding: 60px 40px;
+    border: 2px solid #ddd;
+    border-radius: ${theme.borderRadius};
+    box-shadow: 0 4.6px 2.2px rgba(0, 0, 75, 0.02),
+      0 11px 5.3px rgba(0, 0, 75, 0.028), 0 20.7px 10px rgba(0, 0, 75, 0.035),
+      0 36.9px 17.9px rgba(0, 0, 75, 0.042),
+      0 68.9px 33.4px rgba(0, 0, 75, 0.05), 0 165px 80px rgba(0, 0, 75, 0.07);
   }
 
   /* grid-auto-rows: minmax(40px, auto); */
@@ -32,8 +51,6 @@ export const EditTodoItemStyle = styled.section`
     padding: 40px;
     /* align-self: start; */
     border-radius: ${theme.borderRadius};
-    display: flex;
-    /* align-self: center; */
   }
 
   & div:nth-of-type(1) {
@@ -47,10 +64,13 @@ export const EditTodoItemStyle = styled.section`
     align-self: start;
     /* margin-bottom: 30px; */
     background-color: ${theme.green};
+    display: flex;
+    flex-direction: column;
   }
   & small {
     align-self: flex-end;
     margin-left: 5px;
+    font-size: 0.65rem;
   }
   & textarea {
     width: 80%;
@@ -62,7 +82,7 @@ export const EditTodoItemStyle = styled.section`
     font-family: 'Nunito', sans-serif;
     font-size: 1em;
   }
-  & input:focus {
+  & textarea:focus {
     outline: none;
     border: 2px solid ${theme.purple};
   }
@@ -78,5 +98,10 @@ export const EditTodoItemStyle = styled.section`
     background-color: white;
     font-family: 'Nunito', sans-serif;
     font-weight: 700;
+    color: #161515;
+  }
+  & select:focus {
+    outline: none;
+    border: 2px solid ${theme.purple};
   }
 `;

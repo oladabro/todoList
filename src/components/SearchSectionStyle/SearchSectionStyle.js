@@ -36,7 +36,7 @@ export const SearchSectionStyle = styled.section`
     transition: all 0.3s;
     outline: none;
     border: 2px solid transparent;
-
+    color: #161515;
     background-color: #91ead5;
     cursor: pointer;
     font-family: 'Nunito', sans-serif;

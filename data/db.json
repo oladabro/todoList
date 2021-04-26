@@ -2,13 +2,13 @@
   "tasks": [
     {
       "name": "buty z piwnicy ! koniecznie",
-      "isDone": false,
+      "isDone": true,
       "priority": "High",
       "id": 1
     },
     {
       "name": "odebrać etykietę od Mirki",
-      "isDone": false,
+      "isDone": true,
       "priority": "Low",
       "id": 2
     },
@@ -20,13 +20,13 @@
     },
     {
       "name": "obiad",
-      "isDone": false,
+      "isDone": true,
       "priority": "High",
       "id": 4
     },
     {
       "name": "sprawdzić status dowodu Szymka",
-      "isDone": false,
+      "isDone": true,
       "priority": "Medium",
       "id": 5
     }
