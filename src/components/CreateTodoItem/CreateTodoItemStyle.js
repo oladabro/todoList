@@ -29,7 +29,6 @@ export const CreateTodoItemStyle = styled.form`
   & textarea {
     width: 91%;
     padding: 10px 15px;
-    border: none;
     border-radius: 5px;
     outline: none;
     border: 2px solid transparent;

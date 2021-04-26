@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { borderRadius, purple, yellow, green } from '../shared/theme';
+import { borderRadius, purple, yellow, green } from '../../shared/theme';
 
 export const SearchSectionStyle = styled.section`
   grid-column: 2/3;
@@ -57,7 +57,6 @@ export const SearchSectionStyle = styled.section`
     outline: none;
     border: 2px solid transparent;
     font-size: 1rem;
-    cursor: pointer;
     background-color: white;
     height: 100%;
     font-family: 'Nunito', sans-serif;

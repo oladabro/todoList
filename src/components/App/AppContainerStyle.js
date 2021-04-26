@@ -8,7 +8,4 @@ export const AppContainerStyle = styled.div`
   grid-column-gap: 70px;
   grid-row-gap: 10px;
   /* align-items: start; */
-
-  /* linear-gradient(127deg, #91ead5, rgba(0, 255, 0, 0) 70.71%), */
-  /* linear-gradient(336deg, #8c97fc, rgba(0, 0, 255, 0) 70.71%); */
 `;

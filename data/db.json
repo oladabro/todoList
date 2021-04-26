@@ -1,27 +1,33 @@
 {
   "tasks": [
     {
-      "name": "fdsafdsafasf",
+      "name": "buty z piwnicy ! koniecznie",
+      "isDone": false,
+      "priority": "High",
+      "id": 1
+    },
+    {
+      "name": "odebrać etykietę od Mirki",
       "isDone": false,
       "priority": "Low",
       "id": 2
     },
     {
-      "name": "fsdafasf",
+      "name": "wysłać koszule olx do ruchu",
       "isDone": false,
-      "priority": "Low",
+      "priority": "High",
       "id": 3
     },
     {
-      "name": "fdsafdsafaf",
+      "name": "obiad",
       "isDone": false,
-      "priority": "Low",
+      "priority": "High",
       "id": 4
     },
     {
-      "name": "fdsafdsafads",
+      "name": "sprawdzić status dowodu Szymka",
       "isDone": false,
-      "priority": "Low",
+      "priority": "Medium",
       "id": 5
     }
   ]

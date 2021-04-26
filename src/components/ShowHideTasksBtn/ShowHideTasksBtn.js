@@ -1,6 +1,6 @@
 import React from 'react';
 import { useRecoilState } from 'recoil';
-import { doneTasksBtnState } from '../state/globalState';
+import { doneTasksBtnState } from '../../state/globalState';
 
 export default function ShowHideTasksBtn() {
   const [btnState, setBtnState] = useRecoilState(doneTasksBtnState);

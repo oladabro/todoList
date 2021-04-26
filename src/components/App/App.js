@@ -1,8 +1,8 @@
-import TodoList from './TodoList';
-import EditTodoItem from './EditTodoItem/EditTodoItem';
+import TodoList from '../TodoList/TodoList';
+import EditTodoItem from '../EditTodoItem/EditTodoItem';
 import { RecoilRoot } from 'recoil';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import { GlobalStyle } from '../shared/globalStyle';
+import { GlobalStyle } from '../../shared/globalStyle';
 
 function App() {
   return (
