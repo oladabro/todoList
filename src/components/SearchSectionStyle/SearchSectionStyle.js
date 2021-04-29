@@ -9,7 +9,7 @@ export const SearchSectionStyle = styled.section`
   justify-content: space-between;
   /* margin: 30px 0 0 0; */
   background-color: ${purple};
-  padding: 40px 35px;
+  padding: 50px 35px;
   border-radius: ${borderRadius};
   /* height: 40px; */
   box-sizing: content-box;

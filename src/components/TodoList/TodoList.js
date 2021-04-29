@@ -17,6 +17,7 @@ import { AppContainerStyle } from '../App/AppContainerStyle';
 import ShowHideTasksBtn from '../ShowHideTasksBtn/ShowHideTasksBtn';
 import { TasksListStyle } from '../TasksListStyle/TasksListStyle';
 import { SearchSectionStyle } from '../SearchSectionStyle/SearchSectionStyle';
+import Motivation from '../Motivation/Motivation';
 
 // ----------------------------------------
 
@@ -44,6 +45,7 @@ export default function TodoList() {
     <AppContainerStyle>
       <Header />
       <TodoStats />
+      {/* <Motivation /> */}
       <CreateTodoItem />
       <SearchSectionStyle>
         <SearchBar />

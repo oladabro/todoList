@@ -2,7 +2,11 @@ import React from 'react';
 import axios from 'axios';
 import { useState } from 'react';
 import { useRecoilState, useSetRecoilState } from 'recoil';
-import { todoListState, inputTextState } from '../../state/globalState';
+import {
+  todoListState,
+  inputTextState,
+  tasksCompletedState,
+} from '../../state/globalState';
 import { url, maxInputLength, minInputLength } from '../../shared/utils';
 import { CreateTodoItemStyle } from './CreateTodoItemStyle';
 
@@ -14,6 +18,7 @@ export default function CreateTodoItem() {
 
   const setTodoList = useSetRecoilState(todoListState);
   const [inputLength, setInputLength] = useRecoilState(inputTextState);
+  // const [task, setTask] = useSetRecoilState(tasksCompletedState);
 
   const onChange = (e) => {
     setInputValue(e.target.value);

@@ -5,7 +5,7 @@ export const CreateTodoItemStyle = styled.form`
   grid-column: 2/3;
   align-self: start;
   grid-row: 2/3;
-  padding: 40px 35px;
+  padding: 50px 35px;
   background-color: ${yellow};
   width: 100%;
   display: flex;

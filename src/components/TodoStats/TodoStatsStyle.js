@@ -8,7 +8,7 @@ export const Section = styled.section`
   flex-direction: column;
   align-items: center;
   background-color: ${green};
-  padding-bottom: 50px;
+  padding-bottom: 30px;
   line-height: 2;
   position: relative;
   border-radius: ${borderRadius};
@@ -25,5 +25,12 @@ export const Section = styled.section`
     top: 5px;
     left: 50%;
     transform: translateX(-50%);
+  }
+
+  & div {
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    color: blue;
   }
 `;

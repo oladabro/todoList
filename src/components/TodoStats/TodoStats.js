@@ -1,13 +1,10 @@
 import React from 'react';
 import { useRecoilValue } from 'recoil';
-import { tasksCompletionState, thresholdState } from '../../state/globalState';
+import { tasksCompletionState } from '../../state/globalState';
 import { Section } from './TodoStatsStyle';
 
 export default function TodoStats() {
   const status = useRecoilValue(tasksCompletionState);
-  const message = useRecoilValue(thresholdState);
-
-  // console.log(message);
 
   return (
     <Section>
@@ -30,8 +27,7 @@ export default function TodoStats() {
       <p>
         Percent completed: <strong>{status.percent.toFixed(0)}%</strong>
       </p>
-      {/* </div> */}
-      {message}
+      <div> {status.motivation}</div>
     </Section>
   );
 }
